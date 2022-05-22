@@ -1,0 +1,21 @@
+<div *ngIf="hero">
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">River name: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="River name"/>
+    </div>
+    <div>
+        <label for="hero-name">River lenght: </label>
+        <input id="hero-name" [(ngModel)]="hero.lenght" placeholder="River lenght"/>
+    </div>
+    <div>
+        <label for="hero-name">River source: </label>
+        <input id="hero-name" [(ngModel)]="hero.source" placeholder="River source"/>
+    </div>
+    <div>
+        <label for="hero-name">River mouth: </label>
+        <input id="hero-name" [(ngModel)]="hero.mouth" placeholder="River mouth"/>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+  </div>
